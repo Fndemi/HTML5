@@ -14,6 +14,7 @@
         <ul>
           <li><a href="#html">Learning HTML</a></li>
           <li><a href="#vacation">Planning a Vacation</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -63,54 +64,59 @@
               </p>
             </details>
           </aside>
-          <br>
+          <br />
           <table>
-            <caption>My Daily Schedule</caption>
+            <caption>
+              My Daily Schedule
+            </caption>
             <thead>
-            <tr>
-              <th>&nbsp;</th>
-              <th scope="col">Time</th>
-              <th scope="col">Activity</th>
-            </tr>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
             </thead>
             <tbody>
-            <tr>
-              <th scope="row">Morning</th>
-              <td>
-                <time datetime="08:00">8am</time>
-                <time datetime="11:00">11am</time>
-              </td>
-              <td>Write Code</td>
-            </tr>
-            <tr>
-              <th scope="row">Break</th>
-              <td>
-                <time datetime="11:00">11am</time>
-                <time datetime="12:00">12pm</time>
-              </td>
-              <td>Eat Lunch</td>
-            </tr>
-            <tr>
-              <th scope="row">Afternoon</th>
-              <td>
-                <time datetime="12:00">12am</time>
-                <time datetime="17:00">5pm</time>
-              </td>
-              <td>Study for other courses</td>
-            </tr>
-            <tr>
-              <th scope="row">Evening</th>
-              <td rowspan="2">All other times</td>
-              <td>Free Time</td>
-            </tr>
-            <tr>
-              <th scope="row">Night</th>
-              <td>Sleep</td>
-            </tr>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>
+                  <time datetime="11:00">11am</time>
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>
+                  <time datetime="12:00">12pm</time>
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12am</time>
+                  <time datetime="17:00">5pm</time>
+                </td>
+                <td>Study for other courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All other times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
             </tbody>
             <tfoot>
               <tr>
-                <td colspan="3">And that's what I do every day, 5 days a week.Just eat,sleep,code ..and recharge</td>
+                <td colspan="3">
+                  And that's what I do every day, 5 days a week.Just
+                  eat,sleep,code ..and recharge
+                </td>
               </tr>
             </tfoot>
           </table>
@@ -162,18 +168,112 @@
             </li>
           </ul>
         </section>
-<!-- div has no semantic meaning they are block elements-->
+        <!-- div has no semantic meaning they are block elements-->
         <section>
-        <h3>Places i want to avoid.</h3>
-        <dl>
-          <dt>North pole</dt>
-          <dd>I hear this is <strong>cold</strong>!</dd>
-          <dt>South Pole</dt>
-          <dd>This is also cold</dd>
-          <dt>Mountain Tops</dt>
-          <dd>These are also cold.</dd>
-        </dl>
+          <h3>Places i want to avoid.</h3>
+          <dl>
+            <dt>North pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+            <dt>South Pole</dt>
+            <dd>This is also cold</dd>
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+          </dl>
         </section>
+      </article>
+
+      <hr />
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you!</p>
+        <form action="https://httpbin.org/get" method="get">
+          <p>
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Jane"
+              autocomplete="on"
+              required
+              autofocus="on"
+            />
+          </p>
+          <p>
+            <label for="lastName">First Name:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Doe"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="your secret"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="555555555"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required
+            />
+          </p>
+          <p>
+            <label for="decade">Favorite Decade:</label>
+            <input
+              type="number"
+              name="decade"
+              id="decade"
+              min="1950"
+              max="2020"
+              step="10"
+              value="1980"
+            />
+          </p>
+           <p>
+            <label for="coffee">Favorite Coffe.</label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="iced coffee">Iced Coffee</option>
+              </optgroup>
+              <optgroup label="Expresso Drinks">
+              <option value="latte" selected>Latte</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="cortado">Cortado</option>
+              <option value="americano">Americano</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+          </p> 
+<!-- 
+          <p>
+            <label for="coffee">Favorite Coffee:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+              <option value="coffee">
+              <option value="latte">
+              <option value="espresso">
+              <option value="cortado">
+              <option value="americano">
+              <option value="other">
+            </datalist>
+          </p> -->
+          
+        </form>
       </article>
     </main>
     <footer>
